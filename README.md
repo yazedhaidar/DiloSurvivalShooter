@@ -1,2 +1,2 @@
 # DiloSurvivalShooter
- Game Dilo Survival Shooter
+ game dilo survival shooter
