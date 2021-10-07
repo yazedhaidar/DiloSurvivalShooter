@@ -8,7 +8,6 @@ public class CameraFollow : MonoBehaviour
     public float smoothing = 5f;
     Vector3 offset;
 
-    // Start is called before the first frame update
     private void Start()
     {
         //Mendapatkan offset antara target dan camera
@@ -19,8 +18,9 @@ public class CameraFollow : MonoBehaviour
     {
         //Menapatkan posisi untuk camera
         Vector3 targetCamPos = target.position + offset;
-
+        
         //set posisi camera dengan smoothing
         transform.position = Vector3.Lerp(transform.position, targetCamPos, smoothing * Time.deltaTime);
     }
+
 }
